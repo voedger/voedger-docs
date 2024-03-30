@@ -1,6 +1,6 @@
 # Introduction
 
-Voedger is an all-in-one platform that cuts backend development and operation costs up to 10x. Voedger is designed to build and operate applications that stores and processes data distributed worldwide.
+Voedger is an all-in-one platform that cuts **backend** development and operation costs up to 10x. Voedger is designed to create and operate the backend of applications that store and process data distributed worldwide.
 
 ## Why you need Voedger?
 
