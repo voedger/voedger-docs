@@ -20,7 +20,7 @@ Registry[sys.registry]:::S
 Cluster{{Cluster}}:::G
 Node{{Node}}:::H
 db.Registry[(Federation metadata)]:::H
-UserApp[User application]:::S
+App[Application]:::S
 
 
 %% Relations ====================
@@ -34,7 +34,7 @@ Federation --x|has zero+| WorkerCluster
 MainCluster -.-|is| Cluster
 WorkerCluster -.-|is| Cluster
 Cluster --x|has one+| Node
-Cluster -.-x|runs 0+| UserApp
+Cluster -.-x|runs 0+| App
 
 classDef B fill:#FFFFB5
 classDef S fill:#B5FFFF
