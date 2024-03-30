@@ -1,12 +1,12 @@
 # Clusters & Federations
 
-Voeder is designed to keep and process data in multiple regions, to follow governmental regulations and provide low latency for your clients. To achieve this, Voedger uses the concept of **clusters** and **federations**.
+Voedger is engineered to store and process data across multiple regions, adhering to government regulations and ensuring low latency for clients. To accomplish this, Voedger leverages the concepts of **Clusters** and **Federations**.
 
-Data is kept and processed in **clusters**. A cluster can be a single **node**, but it is recommended to have at least three nodes in a cluster to provide durability and high availability. Cluster can run **User applications**.
+Data is stored and processed in **Clusters**. Although a cluster can consist of a single **Node**, for enhanced durability and high availability, it's advisable to maintain at least three nodes in a cluster. Clusters are capable of running **Applications** and keeping their data.
 
-Clusters are grouped into **federation**. A Federation is a group of clusters that are located in different regions. Federations are used to keep data in multiple regions and to provide low latency for your clients.
+Clusters are organized into a **Federation**. A Federation comprises multiple clusters situated in various regions. This structure enables the storage of data in numerous locations, significantly reducing latency for your clients.
 
-Federation has one **Main Cluster** and number of **Worker Clusters**. Main cluster is used to keep metadata about the Federation, for this purposes it runs the **Registry** (sys.registry) application.
+A Federation is structured around one **Main Cluster** and several **Worker Clusters**. The Main Cluster keeps metadata about the Federation and hosts the **Registry** (sys.registry) application for this purpose.
 
 ```mermaid
 flowchart TD
