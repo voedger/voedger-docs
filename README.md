@@ -1,6 +1,6 @@
 # Introduction
 
-Voedger is an all-in-one platform that cuts backend development and operation costs up to 10x. Primary Voedger usage - build and operate a software that stores and processes data distributed worldwide.
+Voedger is an all-in-one platform that cuts backend development and operation costs up to 10x. Voedger is designed to build and operate applications that stores and processes data distributed worldwide.
 
 ## Why you need Voedger?
 
@@ -12,10 +12,10 @@ You should not learn, choose and intergate all these technologies. Just use Voed
 
 - **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-on-one, no choice.
 - **Solution architecture**. Effective architecture is already developed, just use it.
-- **Ssystem programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
+- **System programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
 - **Application programming**. Describe most of your needs using VSQL. It is not enough? Provide your own Extensions, development process is very easy.
 - **Deployment**. Zero Downtime Deployment is at your service.
-- **Performance optimization**. Comes optimized - batching, pipelining, zero memory allocations in hot paths etc.
+- **Performance optimization**. Comes optimized - caching, sharding, batching, zero memory allocations in hot paths etc.
 - **Logging and monitoring**. Dashboards, alerts, logs - all in one place.
 
  ## What Voedger can do?
