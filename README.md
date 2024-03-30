@@ -10,11 +10,11 @@ If you want to save money and time - you might need Voedger. Why Voedger saves d
 
 There's no need to learn, select, and integrate these technologies. With Voedger, you can direct your focus towards what truly matters for your business. Voedger offers significant advantages to:
 
-**Business owners**
+**Business Owners**
 
 - Save your money and time by an order of magnitude.
 
-**Product owners**
+**Product Owners**
 
 - Direct your team's focus towards business needs rather than on tricky system programming.
 - Accelerate feature delivery to weeks instead of months, or months instead of years.
