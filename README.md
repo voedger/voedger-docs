@@ -4,7 +4,7 @@
 
 ## Why you need Voedger?
 
-If you want to save money and time - you might need Voedger. Why Voedger saves development costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
+If you want to **save money and time** - you might need **Voedger**. Why Voedger saves development costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
 
 ![Modern technology stack. Use Voedger instead all of this...](images/stack.png)
 
@@ -12,7 +12,7 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 **Business Owners**
 
-- Save your money and time by an order of magnitude.
+- Save your money by an order of magnitude.
 
 **Product Owners**
 
