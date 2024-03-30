@@ -49,4 +49,4 @@ Voedger platform is great to build and operate software aimed to store and proce
 
 ## What Voedger is NOT
 
-Voedger is NOT a good choice for **game** and **blockchain** applications since storing data is not a primary goal of such applications or data are kept decentralized.
+Voedger is NOT a good choice for **game** and **blockchain** applications since storing data is not a primary goal of such applications or data is kept decentralized.
