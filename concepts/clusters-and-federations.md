@@ -27,7 +27,7 @@ App[Application]:::S
 
 MainCluster ---|runs| Registry
 MainCluster --- |has| db.Registry
-Registry -.-|uses| db.Registry
+Registry -.-|works with| db.Registry
 
 Federation ---|has one| MainCluster
 Federation --x|has zero+| WorkerCluster
