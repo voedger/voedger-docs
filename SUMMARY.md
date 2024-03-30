@@ -7,6 +7,7 @@
   * [Evend Sourcing & CQRS](concepts/evend-sourcing-and-cqrs.md)
   * [Editions](concepts/editions.md)
   * [Services](concepts/services.md)  
+  * [Notation](concepts/notation.md)  
 
 ## Getting Started
 
