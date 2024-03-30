@@ -8,14 +8,26 @@ If you want to save money and time - you might need Voedger. Why Voedger saves d
 
 ![Modern technology stack to build distributed applications](images/stack.png)
 
-You should not learn, choose and intergate all these technologies. Just use Voedger and focus on what your business needs. Voedger helps you with:
+You should not learn, choose and intergate all these technologies. Just use Voedger and focus on what your business needs. Voedger is beneficial for:
 
+**Business owners**
+- Save your money and time by an order of magnitude.
+
+**Product owners**
+- Team will be focused on business needs, not on system programming.
+- Deliver features in weeks, not in months (or in months, not in years).
+
+**System Architects**
 - **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-on-one, no choice.
 - **Solution architecture**. Effective architecture is already developed, just use it.
+
+**Developers**
 - **System programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
 - **Application programming**. Describe most of your needs using VSQL. It is not enough? Provide your own Extensions, development process is very easy.
-- **Deployment**. Zero Downtime Deployment is at your service.
 - **Performance optimization**. Comes optimized - caching, sharding, batching, zero memory allocations in hot paths etc.
+
+**DevOps**
+- **Deployment**. Zero Downtime Deployment is at your service.
 - **Logging and monitoring**. Dashboards, alerts, logs - all in one place.
 
  ## What Voedger can do?
