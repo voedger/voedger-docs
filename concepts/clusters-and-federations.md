@@ -6,7 +6,7 @@ Data is stored and processed in **Clusters**. Although a cluster can consist of 
 
 Clusters are organized into a **Federation**. A Federation comprises multiple clusters situated in various regions. This structure enables the storage of data in numerous locations, significantly reducing latency for your clients.
 
-A Federation is structured around one **Main Cluster** and several **Worker Clusters**. The Main Cluster keeps metadata about the Federation and hosts the **Registry** (sys.registry) application for this purpose.
+The Federation structure consists of one **Main Cluster** and several **Worker Clusters**. The Main Cluster keeps metadata about the Federation and hosts the **Registry** (sys.registry) application for this purpose.
 
 ```mermaid
 flowchart TD
