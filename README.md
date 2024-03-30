@@ -6,7 +6,7 @@ Voedger is an all-in-one platform that cuts **backend development and operation 
 
 If you want to save money and time - you might need Voedger. Why Voedger saves development costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
 
-![Modern technology stack to build distributed applications](images/stack.png)
+![Modern technology stack. Use Voedger instead all of this...](images/stack.png)
 
 You should not learn, choose and intergate all these technologies. Just use Voedger and focus on what your business needs. Voedger is beneficial for:
 
