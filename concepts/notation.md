@@ -16,6 +16,7 @@ graph TD
   Data:::H
   DataField1([Field1]):::H
   DataField2([Field2]):::H
+  AbstractEntity[Abstract Entity]:::G
 
   Guide[\Guide/]:::H
 
@@ -57,7 +58,7 @@ graph TD
 
   Data --- DataField1
   Data --- DataField2
-
+  
   Product2 --- |used by| Company
   Company --- |has| BusinessProcess
 
