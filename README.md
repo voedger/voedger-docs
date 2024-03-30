@@ -8,7 +8,7 @@ If you want to save money and time - you might need Voedger. Why Voedger saves d
 
 ![Modern technology stack. Use Voedger instead all of this...](images/stack.png)
 
-You should not learn, choose and intergate all these technologies. Just use Voedger and focus on what your business needs. Voedger is beneficial for:
+There's no need to learn, select, and integrate these technologies. With Voedger, you can direct your focus towards what truly matters for your business. Voedger offers significant advantages to:
 
 **Business owners**
 
@@ -16,24 +16,25 @@ You should not learn, choose and intergate all these technologies. Just use Voed
 
 **Product owners**
 
-- Focus your team on the needs of the business, not on system programming.
-- Deliver features in weeks, not months (or in months, not years).
+- Direct your team's focus towards business needs rather than on tricky system programming.
+- Accelerate feature delivery to weeks instead of months, or months instead of years.
 
 **System Architects**
 
 - **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-on-one, no choice.
-- **Solution architecture**. Effective architecture is already developed, just use it.
+- **Solution architecture**.  Leverage an already developed, efficient architecture.
 
 **Developers**
 
 - **System programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
-- **Application programming**. Describe most of your needs using VSQL. It is not enough? Provide your own Extensions, development process is very easy.
+- **Application programming**. Describe data and data transformations using VSQL. Need more?  Easily extend functionality with your own Extensions; the development process is straightforward.
 - **Performance optimization**. Comes optimized - caching, sharding, batching, zero memory allocations in hot paths etc.
 
 **DevOps**
 
+- **Be cloud-agnostic**. Just provide nodes running vanilla Linux, and Voedger will do the rest.
 - **Deployment**. Zero Downtime Deployment is at your service.
-- **Logging and monitoring**. Dashboards, alerts, logs - all in one place.
+- **Logging and monitoring**. Dashboards, alerts, logs - all in one place, configured and ready to use.
 
  ## What Voedger can do?
 
