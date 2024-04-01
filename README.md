@@ -8,7 +8,7 @@ If you want to **save money and time** - you might need **Voedger**. Why Voedger
 
 ![Modern technology stack. Use Voedger instead all of this...](.gitbook/assets/stack.png)
 
-There's no need to learn, select, and integrate these technologies. With Voedger, you can direct your focus towards what truly matters for your business. Voedger offers significant advantages to:
+There's no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
 
 **Business Owners**
 
@@ -16,12 +16,12 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 **Product Owners**
 
-* Direct your team's focus towards business needs rather than on tricky system programming.
+* Direct your team's attention towards business needs rather than on tricky system programming.
 * Accelerate feature delivery to weeks instead of months, or months instead of years.
 
 **System Architects**
 
-* **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-on-one, no choice.
+* **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-in-one, no choice.
 * **Solution architecture**. Leverage an already developed, efficient architecture.
 
 **Developers**
@@ -36,7 +36,7 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 * **Deployment**. Zero Downtime Deployment is at your service.
 * **Logging and monitoring**. Dashboards, alerts, logs - all in one place, configured and ready to use.
 
-## What Voedger can do?
+## What can Voedger do?
 
 Voedger platform is great to build and operate software aimed to store and process data in multiple clusters around the world. To name a few areas where Voedger can be a good choice:
 
