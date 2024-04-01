@@ -38,13 +38,13 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 ## What can Voedger do?
 
-Voedger platform is great to build and operate software aimed to store and process data in multiple clusters around the world. To name a few areas where Voedger can be a good choice:
+Voedger platform is perfect to build and operate software aimed to store and process data in multiple clusters around the world. Let's list a few segments where Voedger can be an excellent match:
 
-* Hotel/Restaurant/Cafe Management
-* Issue/Project Management
-* Online Stores
+* Hotel/Restaurant/Cafe management
+* Issue/Project management
+* Online stores
 * Internet of Things
-* Messengers, Social Networks
+* Messengers, Social networks
 
 ## What Voedger is NOT
 
