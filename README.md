@@ -2,6 +2,8 @@
 
 **Voedger** is an all-in-one **server platform** for operating backends (**Voedger Applications**) that store and process data distributed worldwide. Voyager Application contains a description of the data schema (in VSQL language) and one or more WASM modules.
 
+Voedger platform was designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line.
+
 The name Voedger originates from Voyager and Edge Computing.
 
 ## Why do you need Voedger?
