@@ -5,7 +5,7 @@ Voedger is engineered to store and process data across multiple regions, adherin
 
 ## Clusters
 
-Clusters are intended to operate **Voedger Applications** - software applications developed specially for a **Voedger** platform. Voedger platform hides the complexity of managing the underlying infrastructure, allowing developers to focus on building their applications.
+Clusters are intended to operate **Voedger Applications** - backend applications developed specially for a **Voedger** platform. Voedger platform hides the complexity of managing the underlying infrastructure, allowing developers to focus on building their applications.
 
 Under the hood, Voedger uses: 
 - **Scylla**, a high-performance, distributed NoSQL database management system (DBMS), to store and process data
@@ -69,9 +69,9 @@ graph TD
 
 ## Federation
 
-Clusters are organized into a **Federation**. A Federation comprises multiple clusters situated in various regions. This structure enables the storage of data in numerous locations, significantly reducing latency for your clients.
+Clusters are organized into a **Federation**. A Federation comprises multiple clusters situated in various regions. This structure enables the storage of data in numerous locations, significantly reducing latency for backend clients.
 
-Federation structure is transparent to the developer. The developer interacts with the **Voedger** platform, which manages the underlying infrastructure and routes requests to the appropriate cluster.
+Federation structure is transparent to the developer. Voedger Applications interact with Voedger platform, which routes requests to the appropriate cluster.
 
 The Federation structure consists of one **Main Cluster** and several **Worker Clusters**. The Main Cluster keeps metadata about the Federation and hosts the **Registry** (sys.registry) application for this purpose.
 

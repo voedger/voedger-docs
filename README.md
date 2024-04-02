@@ -1,10 +1,12 @@
 # Introduction
 
-**Voedger** is an all-in-one **server platform** that cuts **backend** development and operation costs up to 10x. Voedger is designed to create and operate the backend of applications that store and process data distributed worldwide.
+**Voedger** is an all-in-one **server platform** designed to operate backends (**Voedger Applications**) that store and process data distributed worldwide.
 
 ## Why do you need Voedger?
 
-If you want to **save money and time** - you might need **Voedger**. Why Voedger does save development costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
+If you want to **save money and time** - you might need **Voedger**. We beleive that with Voedger you can cut **backend** development and operation costs up to 10x.
+
+Why Voedger does save costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
 
 ![Modern technology stack. Use Voedger instead all of this...](.gitbook/assets/stack.png)
 
