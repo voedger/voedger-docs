@@ -2,9 +2,76 @@
 
 Voedger is engineered to store and process data across multiple regions, adhering to government regulations and ensuring low latency for clients. To accomplish this, Voedger leverages the concepts of **Clusters** and **Federations**.
 
-Data is stored and processed in **Clusters**. Although a cluster can consist of a single **Node**, for enhanced durability and high availability, it's advisable to maintain at least three nodes in a cluster. Clusters are capable of running **Applications** and keeping their data.
+
+## Clusters
+
+Clusters are intended to operate **Voedger Applications** - software applications developed specially for a **Voedger** platform. Voedger platform hides the complexity of managing the underlying infrastructure, allowing developers to focus on building their applications.
+
+Under the hood, Voedger uses: 
+- **Scylla**, a high-performance, distributed NoSQL database management system (DBMS), to store and process data
+- **Graphana** for monitoring
+- **Alertmanager** for alerting
+
+All necessary software are installed and configured automatically by **ctool** utility.
+
+
+Although a cluster can consist of a single **Node**, for enhanced durability and high availability, it's advisable to maintain at least three nodes in a cluster.
+
+Cluster architecture:
+
+```mermaid
+graph TD
+    
+    apps:::G
+    subgraph apps["Voedger Applications"]
+        App1:::S
+        App2:::S
+        App3:::S
+    end
+
+    voedger[Voedger]:::S
+
+    Monalert:::G
+    subgraph Monalert[Monitoring, alerting]
+        Graphana:::S
+        Alertmanager:::S
+    end   
+
+    db:::G
+    subgraph db[DBMS]
+        Scylla:::S
+    end
+
+    OS:::G
+    subgraph OS
+        Ubuntu:::S
+    end    
+
+    Hardware:::G
+    subgraph Hardware
+        node-1:::H
+        node-2:::H
+        node-3:::H
+    end    
+    apps --- voedger
+    voedger --- Monalert
+    voedger --- db
+    voedger --- OS
+    Monalert --- OS
+    db --- OS
+    OS --- Hardware
+
+    classDef B fill:#FFFFB5
+    classDef S fill:#B5FFFF
+    classDef H fill:#C9E7B7
+    classDef G fill:#FFFFFF,stroke:#000000, stroke-width:1px, stroke-dasharray: 5 5
+```
+
+## Federation
 
 Clusters are organized into a **Federation**. A Federation comprises multiple clusters situated in various regions. This structure enables the storage of data in numerous locations, significantly reducing latency for your clients.
+
+Federation structure is transparent to the developer. The developer interacts with the **Voedger** platform, which manages the underlying infrastructure and routes requests to the appropriate cluster.
 
 The Federation structure consists of one **Main Cluster** and several **Worker Clusters**. The Main Cluster keeps metadata about the Federation and hosts the **Registry** (sys.registry) application for this purpose.
 
@@ -17,24 +84,16 @@ Federation{{Federation}}:::H
 MainCluster{{Main Cluster}}:::H
 WorkerCluster{{Worker Cluster}}:::H
 Registry[sys.registry]:::S
-Cluster{{Cluster}}:::G
-Node{{Node}}:::H
-db.Registry[(Federation metadata)]:::H
-App[Application]:::S
-
+db.Registry[(Federation Metadata)]:::H
 
 %% Relations ====================
 
-MainCluster ---|runs| Registry
+MainCluster ---|hosts application| Registry
 MainCluster --- |has| db.Registry
 Registry -.-|works with| db.Registry
 
 Federation ---|has one| MainCluster
 Federation --x|has zero+| WorkerCluster
-MainCluster -.-|is| Cluster
-WorkerCluster -.-|is| Cluster
-Cluster --x|has one+| Node
-Cluster -.-x|runs 0+| App
 
 classDef B fill:#FFFFB5
 classDef S fill:#B5FFFF
