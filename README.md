@@ -4,7 +4,7 @@
 
 Voedger platform was designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line.
 
-The name Voedger originates from Voyager and Edge Computing.
+The name "Voedger" is a blend of "Voyager" and "Edge Computing," reflecting its coming capability to process data across the edge of the network.
 
 ## Why do you need Voedger?
 
