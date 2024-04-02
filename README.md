@@ -1,6 +1,8 @@
 # Introduction
 
-**Voedger** is an all-in-one **server platform** designed to operate backends (**Voedger Applications**) that store and process data distributed worldwide.
+**Voedger** is an all-in-one **server platform** for operating backends (**Voedger Applications**) that store and process data distributed worldwide. Voyager Application contains a description of the data schema (in VSQL language) and one or more WASM modules.
+
+The name Voedger originates from Voyager and Edge Computing.
 
 ## Why do you need Voedger?
 
