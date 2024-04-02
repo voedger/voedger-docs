@@ -7,7 +7,7 @@ Voedger is engineered to store and process data across multiple regions, adherin
 
 Clusters are intended to operate **Voedger Applications** - backend applications developed specially for a **Voedger** platform. Voedger platform hides the complexity of managing the underlying infrastructure, allowing developers to focus on building their applications.
 
-Under the hood, Voedger uses: 
+Under the hood, Voedger uses the following software:
 - **Scylla**, a high-performance, distributed NoSQL database management system (DBMS), to store and process data
 - **Graphana** for monitoring
 - **Alertmanager** for alerting
@@ -15,7 +15,7 @@ Under the hood, Voedger uses:
 All necessary software are installed and configured automatically by **ctool** utility.
 
 
-Although a cluster can consist of a single **Node**, for enhanced durability and high availability, it's advisable to maintain at least three nodes in a cluster.
+Although a cluster can consist of just a single **Node**, for enhanced durability and high availability, it's advisable to maintain at least three nodes in a cluster.
 
 Cluster architecture:
 
