@@ -2,7 +2,6 @@
 
 Voedger is engineered to store and process data across multiple regions, adhering to government regulations and ensuring low latency for clients. To accomplish this, Voedger leverages the concepts of **Clusters** and **Federations**.
 
-
 ## Clusters
 
 Clusters are intended to operate **Voedger Applications** - backend applications developed specially for a **Voedger** platform. Voedger platform hides the complexity of managing the underlying infrastructure, allowing developers to focus on building their applications.
