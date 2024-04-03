@@ -1,8 +1,8 @@
 # Introduction
 
-**Voedger** is an all-in-one **server platform** for operating backends (**Voedger Applications**) that store and process data distributed worldwide. Voyager Application contains a description of the data schema (in VSQL language) and one or more WASM modules.
+**Voedger** is an all-in-one **server platform**  for the deployment, execution, and management of specialized applications distributed worldwide (**Voedger Applications**).  A Voedger Application includes a description of the data schema (using VSQL language) and one or more WASM modules.
 
-Voedger platform was initially designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line and developed together with other contributors.
+The Voedger platform was initially designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line and has been further developed together with other contributors.
 
 The name "Voedger" is a blend of "Voyager" and "Edge Computing," reflecting its coming capability to process data across the edge of the network.
 
@@ -44,13 +44,13 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 ## What can Voedger do?
 
-Voedger platform is perfect to build and operate software aimed to store and process data in multiple clusters around the world. Let's list a few segments where Voedger can be an excellent match:
+Voedger platform is perfect to build and operate software aimed to store and process data in multiple clusters around the world. We beleive that Voedger can be a good choice for applications in the following domains:
 
 * Hotel/Restaurant/Cafe management
 * Issue/Project management
 * Online stores
 * Internet of Things
-* Messengers, Social networks
+* Messengers, social networks
 
 ## What Voedger is NOT
 
