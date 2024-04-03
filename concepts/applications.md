@@ -30,8 +30,8 @@ subgraph Cluster["Voedger Cluster"]
     AppPartition["Application Partition"]:::S
 end
 
-vpm["vpm build"]:::S
-curl["curl -F ‘data=@&lt;image-file&gt;’ &lt;cluster-address&gt;"]:::S
+vpm["$ vpm build"]:::S
+curl["$ curl -F ‘data=@&lt;image-file&gt;’ &lt;cluster-address&gt;"]:::S
 
 %% Relations ====================
 
