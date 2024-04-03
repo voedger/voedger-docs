@@ -5,7 +5,7 @@
 - **Application Sources**: The original files and resources used to build the Application Image.
 - **vpm**: The Voedger Package Manager, a command-line interface (CLI) tool designed to build Application Images from Application Sources.
 
-Voedger Application lifecycle:
+## Voedger Application lifecycle
 ```mermaid
 graph TD
 
@@ -49,7 +49,3 @@ classDef S fill:#B5FFFF
 classDef H fill:#C9E7B7
 classDef G fill:#FFFFFF,stroke:#000000, stroke-width:1px, stroke-dasharray: 5 5
 ```
-
-
-Voedger Application contains a description of the data schema (in VSQL language) and one or more WASM modules.
-
