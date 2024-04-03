@@ -1,18 +1,55 @@
 # Applications
 
+- **Voedger Application**: A runtime instance of the software defined by the **Application Image**. Application is partitioned into one or many **Application Partitions**.
+- **Application Image**: A ZIP archive containing several *.vsql files that describe the application's data schema (using VSQL language), along with WASM modules.
+- **Application Sources**: The original files and resources used to build the Application Image.
+- **vpm**: The Voedger Package Manager, a command-line interface (CLI) tool designed to build Application Images from Application Sources.
+
+Voedger Application lifecycle:
+```mermaid
+graph TD
+
+%% Entities ====================
+
+Sources:::G
+subgraph Sources["Application Sources"]
+   VSQLfiles["*.vsql files"]:::H
+   Gofiles["*.go files"]:::H
+end
+
+Image:::G
+subgraph Image["Application Image (a zip archive)"]
+    VSQLfiles2["*.vsql files"]:::H
+    WASMFIle["*.wasm files"]:::H
+end
+
+Cluster:::G
+subgraph Cluster["Voedger Cluster"]
+    voedger:::S
+    Application:::S    
+    AppPartition["Application Partition"]:::S
+end
+
+vpm["vpm build"]:::S
+curl["curl -F ‘data=@&lt;image-file&gt;’ &lt;cluster-address&gt;"]:::S
+
+%% Relations ====================
+
+Sources -.-> vpm
+vpm -.-> Image
+Image -.-> curl
+curl -.-> voedger
+
+voedger --x |runs zero or many| Application
+Application --x |has one or many| AppPartition
+
+
+classDef B fill:#FFFFB5
+classDef S fill:#B5FFFF
+classDef H fill:#C9E7B7
+classDef G fill:#FFFFFF,stroke:#000000, stroke-width:1px, stroke-dasharray: 5 5
+```
+
+
 Voedger Application contains a description of the data schema (in VSQL language) and one or more WASM modules.
-
-## VSQL DDL
-
-VSQL is an extended version of a PosgressSQL dialect, the key differences, in connection to the DDL part of the SQL:
-
-- **No ALTER statement**. VSQL does not have an ALTER statement. Just change your existing TABLE description, new schemas will be used automatically with zero downtime.
-- **No CREATE word**. Since there is no ALTER statement, CREATE word is not needed, just use `TABLE ...` instead of `CREATE TABLE ...`.
-- **No NULL values**. If the value for a field has not been supplied, default value (normally "zero value") will always be returned. Forget about `IS NULL`, `COALESCE()` and others NULL-related things.
-- **IS NULL**. Still DDL syntax has `IS NOT NULL` as a part of the fields description, to force users to provide values for such fields.
-
-
-## Packages
-
-A Voedger Application can contain one or more packages. A package has a schema and optional WASM moodule.
 

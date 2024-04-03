@@ -4,6 +4,7 @@
 * [Concepts](concepts/README.md)
   * [Clusters & Federations](concepts/clusters-and-federations.md)
   * [Applications](concepts/applications.md)
+  * [VSQL](concepts/vsql.md)
   * [Evend Sourcing & CQRS](concepts/evend-sourcing-and-cqrs.md)
   * [Editions](concepts/editions.md)
   * [Services](concepts/services.md)
