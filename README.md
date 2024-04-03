@@ -32,7 +32,7 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 **Developers**
 
-- **System programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
+- **System programming**. Creating users, authentication, authorization, sharding, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
 - **Application programming**. Describe data and data transformations using VSQL. Need more? Easily extend functionality with your own Extensions; the development process is straightforward.
 - **Performance optimization**. Comes optimized - caching, sharding, batching, zero memory allocations in hot paths etc.
 
