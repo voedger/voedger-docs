@@ -60,10 +60,10 @@ graph TD
     db --- OS
     OS --- Hardware
 
-    classDef B fill:#FFFFB5
-    classDef S fill:#B5FFFF
-    classDef H fill:#C9E7B7
-    classDef G fill:#FFFFFF,stroke:#000000, stroke-width:1px, stroke-dasharray: 5 5
+    classDef B fill:#FFFFB5,color:#333
+    classDef S fill:#B5FFFF,color:#333
+    classDef H fill:#C9E7B7,color:#333
+    classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
 ```
 
 ## Federation
@@ -94,8 +94,8 @@ Registry -.-|works with| db.Registry
 Federation ---|has one| MainCluster
 Federation --x|has zero+| WorkerCluster
 
-classDef B fill:#FFFFB5
-classDef S fill:#B5FFFF
-classDef H fill:#C9E7B7
-classDef G fill:#FFFFFF,stroke:#000000, stroke-width:1px, stroke-dasharray: 5 5
+classDef B fill:#FFFFB5,color:#333
+classDef S fill:#B5FFFF,color:#333
+classDef H fill:#C9E7B7,color:#333
+classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
 ```
