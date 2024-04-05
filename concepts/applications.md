@@ -31,14 +31,14 @@ subgraph Cluster["Voedger Cluster"]
 end
 
 vpm["$ vpm build"]:::S
-curl["$ curl -F ‘data=@&lt;image-file&gt;’ &lt;cluster-address&gt;"]:::S
+vpmupload["$ vpm upload"]:::S
 
 %% Relations ====================
 
 Sources -.-> vpm
 vpm -.-> Image
-Image -.-> curl
-curl -.-> voedger
+Image -.-> vpmupload
+vpmupload -.-> voedger
 
 voedger --x |runs zero or many| Application
 Application --x |has one or many| AppPartition
