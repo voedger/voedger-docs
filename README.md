@@ -28,7 +28,7 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 **System Architects**
 
 - **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-in-one, no choice.
-- **Solution architecture**. Leverage an already developed, efficient architecture.
+- **Solution architecture**. Use an already developed, efficient architecture.
 
 **Developers**
 
