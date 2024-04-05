@@ -8,7 +8,7 @@ Clusters are intended to operate **Voedger Applications** - backend applications
 
 Under the hood, Voedger uses the following software:
 - **Scylla**, a high-performance, distributed NoSQL database management system (DBMS), to store and process data
-- **Graphana** for monitoring
+- **Grafana** for monitoring
 - **Alertmanager** for alerting
 
 All necessary software are installed and configured automatically by **ctool** utility.
@@ -32,7 +32,7 @@ graph TD
 
     Monalert:::G
     subgraph Monalert[Monitoring, alerting]
-        Graphana:::S
+        Grafana:::S
         Alertmanager:::S
     end   
 
