@@ -41,7 +41,9 @@ Only changes that maintain backward compatibility are permitted. For example, yo
 
 ## Nullability
 
-In VSQL, table field values cannot be NULL, eliminating the need for `IS NULL`, `COALESCE()`, and other NULL-related functions. Think of tables as C-structures whose fields have basic types.
+> **Nullability** refers to the ability of a database column to accept NULL values. 
+
+In VSQL, column values cannot be NULL, eliminating the need for `IS NULL`, `COALESCE()`, and other NULL-related functions. Think of Voedger tables as C-structures whose fields have basic types.
 
 However, field can have the `NOT NULL` attribute, which means that you need to specify a value for this field when **inserting** a new record. 
 
