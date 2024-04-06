@@ -1,11 +1,11 @@
 # VSQL
 
-Voedger SQL (VSQL) is based on the SQL (Structured Query Language) and used to interact with Voedger database.  Main differences between VSQL and SQL:
+Voedger SQL (VSQL) is based on the traditional SQL (Structured Query Language) and used to interact with the Voedger database.  Main differences between VSQL and SQL:
 
-- Alterability
-- Nullability
-- Simplified referencing
-- Table inheritance
+- **Alterability**: VSQL eliminates the need for the ALTER statement, streamlining schema modifications with automatic, zero downtime updates. 
+- **Nullability**: VSQL tables do not support NULL values, simplifying data handling by avoiding NULL-related operations. 
+- **Simplified referencing**
+- **Table inheritance**
 - **Workspace** concept
 - **Nested Table** concept
 - **Singletone** concept
@@ -16,7 +16,7 @@ Voedger SQL (VSQL) is based on the SQL (Structured Query Language) and used to i
 
 ## Alterability
 
-There is no ALTER statement in VSQL and, therefore, there is no need to use `CREATE` word. Just change your existing TABLE description, new schemas will be used automatically with zero downtime.
+VSQL does not use the ALTER statement. Instead, schema updates are made directly to the TABLE description, with new schemas applied automatically and seamlessly. Consider an example of schema evolution.
 
 MyTable, version 1:
 ```sql
@@ -27,29 +27,25 @@ TABLE MyTable (
 );
 ```
 
-MyTable, version 1:
+Updated to version 2 by adding Field4:
 ```sql
 TABLE MyTable (
     Field1 int,
     Field2 int,
     Field3 int,
-    Field4 int -- Field4 field added    
+    Field4 int -- Added Field4
 );
 ```
 
-Only compatible changes are allowed. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked by the using `compat` command of the `vpm` tool.
-
+Only changes that maintain backward compatibility are permitted. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked by the using `compat` command of the `vpm` tool.
 
 ## Nullability
 
-Fields of the Voedger tables might not have NULL values. Forget about `IS NULL`, `COALESCE()` and others NULL-related things. Think about tables as about Go structures where fields have basic types:
+In VSQL, table fields cannot be NULL, eliminating the need for `IS NULL`, `COALESCE()`, and other NULL-related functions. Think of tables as C-structures whose fields have basic types.
 
-```sql
-type MyTable struct {
-	Field1 int
-	Field2 int
-	Field3 int
-}
-```
+However, fields can have the `NOT NULL` attribute, which means that you need to specify a value for this field when **inserting** a new record. 
 
-Stil fields can have `NOT NULL` attribute which means that the value for this field must be provided.
+Please note:
+
+- Voedger does NOT enforce the `NOT NULL` attribute when **updating** records.
+- Adding a new field with the `NOT NULL` attribute to an existing table means querying this field in existing records will return a default value: `0` for integer fields, `""` (empty string) for string fields, `false` for boolean fields, etc.
