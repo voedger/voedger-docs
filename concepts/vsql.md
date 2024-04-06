@@ -16,7 +16,7 @@ Voedger SQL (VSQL) is based on the traditional SQL (Structured Query Language) a
 
 ## Alterability
 
-VSQL does not use the ALTER statement. Instead, schema updates are made directly to the TABLE description, with new schemas applied automatically and seamlessly. Consider an example of schema evolution.
+VSQL does not use the `ALTER` statement and the `CREATE` word. Instead, schema updates are made directly to the `TABLE` description. During deployment new schemas applied automatically and seamlessly, with zero downtime. Consider an example of schema evolution.
 
 MyTable, version 1:
 ```sql
@@ -37,7 +37,7 @@ TABLE MyTable (
 );
 ```
 
-Only changes that maintain backward compatibility are permitted. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked by the using `compat` command of the `vpm` tool.
+Only changes that maintain backward compatibility are permitted. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked with the `$ vpm compat` command.
 
 ## Nullability
 
@@ -47,5 +47,5 @@ However, fields can have the `NOT NULL` attribute, which means that you need to 
 
 Please note:
 
-- Voedger does NOT enforce the `NOT NULL` attribute when **updating** records.
+- Voedger does NOT enforce the `NOT NULL` attribute when **updating** records (and, of course, you can not supply the NULL values).
 - Adding a new field with the `NOT NULL` attribute to an existing table means querying this field in existing records will return a default value: `0` for integer fields, `""` (empty string) for string fields, `false` for boolean fields, etc.
