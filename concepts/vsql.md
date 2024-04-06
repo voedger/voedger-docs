@@ -37,7 +37,7 @@ TABLE MyTable (
 );
 ```
 
-Only changes that maintain backward compatibility are permitted. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked with the `$ vpm compat` command.
+Only changes that maintain backward compatibility are permitted. For example, you can't change the type of the existing field, remove a field, or change the order of the fields. Compatibility can be checked at design time with the `$ vpm compat` command.
 
 ## Nullability
 
