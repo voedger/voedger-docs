@@ -7,46 +7,44 @@
 
 ## Voedger Application lifecycle
 ```mermaid
-graph TD
+    graph TD
 
-%% Entities ====================
+    %% Entities ====================
 
-Sources:::G
-subgraph Sources["Application Sources"]
-   VSQLfiles["*.vsql files"]:::H
-   Gofiles["*.go files"]:::H
-end
+    Sources:::G
+    subgraph Sources["Application Sources"]
+    VSQLfiles["*.vsql files"]:::H
+    Gofiles["*.go files"]:::H
+    end
 
-Image:::G
-subgraph Image["Application Image (a zip archive)"]
-    VSQLfiles2["*.vsql files"]:::H
-    WASMFIle["*.wasm files"]:::H
-end
+    Image:::G
+    subgraph Image["Application Image (a zip archive)"]
+        VSQLfiles2["*.vsql files"]:::H
+        WASMFIle["*.wasm files"]:::H
+    end
 
-Cluster:::G
-subgraph Cluster["Voedger Cluster"]
-    voedger:::S
-    Application:::S    
-    AppPartition["Application Partition"]:::S
-end
+    Cluster:::G
+    subgraph Cluster["Voedger Cluster"]
+        voedger:::S
+        Application:::S    
+        AppPartition["Application Partition"]:::S
+    end
 
-vpm["$ vpm build"]:::S
-vpmupload["$ vpm upload"]:::S
+    vpm["$ vpm build"]:::S
+    vpmupload["$ vpm upload"]:::S
 
-%% Relations ====================
+    %% Relations ====================
 
-Sources -.-> vpm
-vpm -.-> Image
-Image -.-> vpmupload
-vpmupload -.-> voedger
+    Sources -.-> vpm
+    vpm -.-> Image
+    Image -.-> vpmupload
+    vpmupload -.-> voedger
 
-voedger --x |runs zero or many| Application
-Application --x |has one or many| AppPartition
+    voedger --x |runs zero or many| Application
+    Application --x |has one or many| AppPartition
 
-
-
-classDef B fill:#FFFFB5,color:#333
-classDef S fill:#B5FFFF,color:#333
-classDef H fill:#C9E7B7,color:#333
-classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
+    classDef B fill:#FFFFB5,color:#333
+    classDef S fill:#B5FFFF,color:#333
+    classDef H fill:#C9E7B7,color:#333
+    classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
 ```
