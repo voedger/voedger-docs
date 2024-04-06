@@ -21,7 +21,7 @@ VSQL does not use the `ALTER` statement and the `CREATE` word. Instead, schema u
 MyTable, version 1:
 ```sql
 TABLE MyTable (
-    Field1 int,
+    Field1 int NOT NULL,
     Field2 int,
     Field3 int
 );
@@ -30,10 +30,10 @@ TABLE MyTable (
 Updated to version 2 by adding Field4:
 ```sql
 TABLE MyTable (
-    Field1 int,
-    Field2 int,
+    Field1 int,             -- NOT NULL removed
+    Field2 int NOT NULL,    -- Added NOT NULL
     Field3 int,
-    Field4 int -- Added Field4
+    Field4 int              -- Added Field4
 );
 ```
 
@@ -41,9 +41,9 @@ Only changes that maintain backward compatibility are permitted. For example, yo
 
 ## Nullability
 
-In VSQL, table fields cannot be NULL, eliminating the need for `IS NULL`, `COALESCE()`, and other NULL-related functions. Think of tables as C-structures whose fields have basic types.
+In VSQL, table field values cannot be NULL, eliminating the need for `IS NULL`, `COALESCE()`, and other NULL-related functions. Think of tables as C-structures whose fields have basic types.
 
-However, fields can have the `NOT NULL` attribute, which means that you need to specify a value for this field when **inserting** a new record. 
+However, field can have the `NOT NULL` attribute, which means that you need to specify a value for this field when **inserting** a new record. 
 
 Please note:
 
