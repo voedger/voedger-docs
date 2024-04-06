@@ -16,7 +16,7 @@ Voedger SQL (VSQL) is based on the traditional SQL (Structured Query Language) a
 
 ## Alterability
 
-VSQL does not use the `ALTER` statement and the `CREATE` word. Instead, schema updates are made directly to the `TABLE` description. During deployment new schemas applied automatically and seamlessly, with zero downtime. Consider an example of schema evolution.
+VSQL does not use the `ALTER TABLE` statement. Instead, schema updates are made directly to the `TABLE` description. During deployment new schemas applied automatically and seamlessly, with zero downtime. Consider an example of schema evolution.
 
 MyTable, version 1:
 ```sql
