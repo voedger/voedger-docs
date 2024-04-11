@@ -7,7 +7,7 @@
 
 ## Voedger Application lifecycle
 ```mermaid
-    graph TD
+    graph
 
     %% Entities ====================
 
@@ -31,14 +31,14 @@
     end
 
     vpm["$ vpm build"]:::S
-    vpmupload["$ vpm upload"]:::S
+    vpmdeploy["$ vpm deploy"]:::S
 
     %% Relations ====================
 
     Sources -.-> vpm
     vpm -.-> Image
-    Image -.-> vpmupload
-    vpmupload -.-> voedger
+    Image -.-> vpmdeploy
+    vpmdeploy -.-> voedger
 
     voedger --x |runs zero or many| Application
     Application --x |has one or many| AppPartition
