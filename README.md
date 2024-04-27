@@ -1,14 +1,20 @@
 # Introduction
 
-**Voedger** is an all-in-one **server platform** that cuts **backend** development and operation costs up to 10x. Voedger is designed to create and operate the backend of applications that store and process data distributed worldwide.
+**Voedger** is an all-in-one **server platform**  for the deployment, execution, and management of specialized applications distributed worldwide (**Voedger Applications**).  A Voedger Application includes a description of the data schema (using VSQL language) and one or many WASM modules.
 
-## Why you need Voedger?
+The Voedger platform was initially designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line and has been further developed together with other contributors.
 
-If you want to **save money and time** - you might need **Voedger**. Why Voedger saves development costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
+The name "Voedger" is a blend of "Voyager" and "Edge Computing," reflecting its coming capability to process data across the edge of the network.
 
-![Modern technology stack. Use Voedger instead all of this...](images/stack.png)
+## Why do you need Voedger?
 
-There's no need to learn, select, and integrate these technologies. With Voedger, you can direct your focus towards what truly matters for your business. Voedger offers significant advantages to:
+If you want to **save money and time** - you might need **Voedger**. We beleive that with Voedger you can cut **backend** development and operation costs up to 10x.
+
+Why Voedger does save costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
+
+![Modern technology stack. Use Voedger instead all of this...](.gitbook/assets/stack.png)
+
+There's no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
 
 **Business Owners**
 
@@ -16,18 +22,18 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 
 **Product Owners**
 
-- Direct your team's focus towards business needs rather than on tricky system programming.
-- Accelerate feature delivery to weeks instead of months, or months instead of years.
+- Focus your team's efforts on business objectives rather than complex system programming challenges.
+- Reduce the time to market for new features, reducing it to weeks instead of months, or months instead of years.
 
 **System Architects**
 
-- **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-on-one, no choice.
-- **Solution architecture**.  Leverage an already developed, efficient architecture.
+- **Choosing a technology stack**. You do not need to choose technology stack components. Voedger is all-in-one, no choice.
+- **Solution architecture**. Use an already developed, efficient architecture.
 
 **Developers**
 
-- **System programming**. Creating users, authentication, authorization, sharding, sync, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
-- **Application programming**. Describe data and data transformations using VSQL. Need more?  Easily extend functionality with your own Extensions; the development process is straightforward.
+- **System programming**. Creating users, authentication, authorization, sharding, queues processing, service mesh, logging, monitoring etc. - save your time, it is already implemented.
+- **Application programming**. Describe data and data transformations using VSQL. Need more? Easily extend functionality with your own Extensions; the development process is straightforward.
 - **Performance optimization**. Comes optimized - caching, sharding, batching, zero memory allocations in hot paths etc.
 
 **DevOps**
@@ -36,16 +42,15 @@ There's no need to learn, select, and integrate these technologies. With Voedger
 - **Deployment**. Zero Downtime Deployment is at your service.
 - **Logging and monitoring**. Dashboards, alerts, logs - all in one place, configured and ready to use.
 
- ## What Voedger can do?
+## What can Voedger do?
 
-Voedger platform is great to build and operate software aimed to store and process data in multiple clusters around the world. To name a few areas where Voedger can be a good choice:
+Voedger platform is perfect to build and operate software aimed to store and process data in multiple clusters around the world. We beleive that Voedger can be a good choice for applications in the following domains:
 
-- Hotel/Restaurant/Cafe Management
-- Issue/Project Management
-- Online Stores
+- Hotel/Restaurant/Cafe management
+- Issue/Project management
+- Online stores
 - Internet of Things
-- Messengers, Social Networks
-
+- Messengers, social networks
 
 ## What Voedger is NOT
 
