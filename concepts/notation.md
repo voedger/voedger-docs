@@ -18,26 +18,26 @@ graph TD
   Data:::H
   DataField1([Field1]):::H
   DataField2([Field2]):::H
-  AbstractEntity[Abstract Entity]:::G
+  AbstractEntity[Abstract entity]:::G
 
   Guide[\? Guide/]:::H
 
-  ProductLine[["== Product Line"]]:::S
+  ProductLine[["== Product line"]]:::S
     ProductLine --- Product1[= Product 1]:::S
     ProductLine --- Product2[= Product 2]:::S
 
   SoftwareComponents:::G
   subgraph SoftwareComponents[Group of elements]
-    SoftwareComponent["# Software Component 1"]:::S
-    SoftwareFunction("> Software Function"):::S
-    SoftwareComponent2["# Software Component 2"]:::S
+    SoftwareComponent["# Software component 1"]:::S
+    SoftwareFunction("> Software function"):::S
+    SoftwareComponent2["# Software component 2"]:::S
   end
   
-  SoftwareService([Software Service]):::S  
+  SoftwareService([Software service]):::S  
   
   User["@ Human actor (e.g. User)"]:::B
   Company{{"$ Non-human actor (e.g. Company)"}}:::B
-  BusinessProcess("> Business Process"):::B
+  BusinessProcess("> Business process"):::B
 
 
   %% Relations =================================
