@@ -1,9 +1,4 @@
-# Notation
-
-Notation is based on:
-- [ArchiMate](https://en.wikipedia.org/wiki/ArchiMate) (/ˈɑːrkɪmeɪt/ AR-ki-mayt; originally from Architecture-Animate), open and independent enterprise architecture modeling language
-- [Entity–relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model), describes interrelated things of interest in a specific domain of knowledge
-- [ArchiMate Metamodel For Enterprise Development](https://www.hosiaisluoma.fi/blog/archimate-metamodel/)
+# Notation experiments
 
 ```mermaid
 graph TD
@@ -19,23 +14,23 @@ graph TD
   DataField2([Field2]):::H
   AbstractEntity[Abstract Entity]:::G
 
-  Guide[\? Guide/]:::H
+  Guide[\📖Guide/]:::H
 
-  ProductLine[["== Product Line"]]:::S
-    ProductLine --- Product1[= Product 1]:::S
-    ProductLine --- Product2[= Product 2]:::S
+  ProductLine[["🎁Product Line"]]:::S
+    ProductLine --- Product1[📦Product 1]:::S
+    ProductLine --- Product2[📦Product 2]:::S
 
   SoftwareComponents:::G
   subgraph SoftwareComponents[Group of elements]
-    SoftwareComponent["# Software Component 1"]:::S
+    SoftwareComponent["Software Component 1"]:::S
     SoftwareFunction("> Software Function"):::S
-    SoftwareComponent2["# Software Component 2"]:::S
+    SoftwareComponent2["※Software Component 2"]:::S
   end
   
   SoftwareService([Software Service]):::S  
   
-  User["@ Human actor (e.g. User)"]:::B
-  Company{{"$ Non-human actor (e.g. Company)"}}:::B
+  User["👤Human actor (e.g. User)"]:::B
+  Company{{"Non-human actor (e.g. Company)"}}:::B
   BusinessProcess("> Business Process"):::B
 
 
@@ -70,7 +65,3 @@ graph TD
   classDef H fill:#C9E7B7,color:#333
   classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
 ```
-
-## See also
-
-- [notation-experiments.md](notation-experiments.md)
