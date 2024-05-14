@@ -1,6 +1,6 @@
 # Introduction
 
-**Voedger** is an all-in-one **server platform**  for the deployment, execution, and management of specialized applications distributed worldwide (**Voedger Applications**).  A Voedger Application includes a description of the data schema (using VSQL language) and one or many WASM files.
+**Voedger** is an all-in-one **server platform**  for the development and operation of specialized applications distributed worldwide (**Voedger Applications**).  A Voedger Application includes a description of the data schema (using VSQL language) and zero or many WASM files.
 
 The Voedger platform was initially designed by unTill Software Development Group B. V. to operate [unTill Air](https://untillair.com/) product line and has been further developed together with other contributors.
 
