@@ -11,18 +11,21 @@ graph TD
 
   %% Entities =================================
 
-  Infrastructure{{Infrastructure}}:::H
+  Event>Event]:::B
+  Cluster[[Cluster]]:::H
+  Device[/Device\]:::H  
+  Infrastructure{{Node}}:::H
   Database[(Database)]:::H
-  Table:::H
+  Table["[] Table"]:::H
   Field([Field]):::H
-  Data:::H
+  Data[Data Object]:::H
   DataField1([Field1]):::H
   DataField2([Field2]):::H
   AbstractEntity[Abstract entity]:::G
 
-  Guide[\? Guide/]:::H
+  Guide[? Guide]:::S
 
-  ProductLine[["== Product line"]]:::S
+  ProductLine[["= Product line"]]:::S
     ProductLine --- Product1[= Product 1]:::S
     ProductLine --- Product2[= Product 2]:::S
 
@@ -36,7 +39,7 @@ graph TD
   SoftwareService([Software service]):::S  
   
   User["@ Human actor (e.g. User)"]:::B
-  Company{{"$ Non-human actor (e.g. Company)"}}:::B
+  Company["$ Non-human actor (e.g. Company)"]:::B
   BusinessProcess("> Business process"):::B
 
 
