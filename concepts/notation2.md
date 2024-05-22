@@ -7,7 +7,6 @@ Notation is based on:
 - [C4 model](https://c4model.com/) for visualising software architecture
 
 ## C1: Context
-
 Cluster, products, services, roles
 
 ```mermaid
@@ -18,12 +17,12 @@ graph TD
   Cluster[[Cluster]]:::H
   Node{{Node}}:::H
   Device[/Device\]:::H  
-  SoftwareService([Software Service]):::S  
+  SoftwareService([Software service]):::S  
 
   ProductLine[[Product line]]:::S
   ProductLine --x |has 1+| Product[Product]:::S
-  ExternalSystem1[\External System 1/]:::S
-  ExternalSystem2[\External System 2/]:::S
+  ExternalSystem1[\ExternalSystem 1/]:::S
+  ExternalSystem2[\ExternalSystem 2/]:::S
   
   User["@ Role"]:::B
   Company[["Company"]]:::B
@@ -52,7 +51,6 @@ graph TD
 
 
 ## C2: Containers
-
 Nodes, databases, workspaces, software components
 
 ```mermaid
@@ -64,9 +62,8 @@ graph TD
   Application[Application]:::S
   Node{{Node}}:::H
   Database[(Database)]:::H
-  AppWorkspace[(App Workspace)]:::S
-  UserWorkspace[(User Workspace)]:::S
-  SoftwareComponent["# Software Component"]:::S
+  Workspace[(Workspace)]:::S
+  SoftwareComponent["# Software component"]:::S
   SoftwareService([Software service]):::S
   Event>Event1]:::B
   
@@ -74,12 +71,11 @@ graph TD
 
   Cluster --> |runs 1+| Application
   Cluster --x |has 1+| Node
-  Application --x |has 1+| AppWorkspace
-  Application --x |has 0+| UserWorkspace
+  Application --x |has 1+| Workspace
 
   Node --x Database
   Node --> |runs| SoftwareComponent
-  UserWorkspace -->|provides| SoftwareService
+  Workspace -->|provides| SoftwareService
 
 
   SoftwareService -.->|sends data to|Device
