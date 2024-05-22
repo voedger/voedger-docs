@@ -123,18 +123,18 @@ end
 
 %% Relations =================================
 
-Role1 -.-> |calls| Command1
-Role1 -.-> |calls| Query1
-Command1 -.-> |ON INSERT| Projector1
+Role1 --> |calls| Command1
+Role1 --> |calls| Query1
+Command1 --> |ON INSERT| Projector1
 Command1 -.-> |creates| Table1
 Projector1 -.-> |maintains|View1
-Query1 -.-> |reads from|View1
-View1 -.-> |contains| ViewField1
-View1 -.-> |contains| ViewField2
+Query1 -.- |reads from|View1
+View1 --- |contains| ViewField1
+View1 --- |contains| ViewField2
 
-Role2 -.-> |calls| Command2
-Command2 -.-> |ON INSERT| Projector2
-Projector2 -.-> |executes|sys.CreateChildWorkspace
+Role2 --> |calls| Command2
+Command2 --> |ON INSERT| Projector2
+Projector2 --> |executes|sys.CreateChildWorkspace
 Command2 -.-> |creates| Table2
 
 sys.CreateChildWorkspace -..-> |creates| Workspace2
