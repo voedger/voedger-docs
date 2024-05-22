@@ -41,7 +41,7 @@ graph TD
   SoftwareService --> |used by| Company
   SoftwareService --> |used by| User
   SoftwareService --> |serves| BusinessProcess
-  User --- |assigned to| BusinessProcess
+  User --> |assigned to| BusinessProcess
   
 
   classDef B fill:#FFFFB5,color:#333
