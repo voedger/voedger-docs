@@ -107,7 +107,7 @@ graph TD
 
 ### Fault Tolerance
 
-- If a database node goes down, data shall NOT be lost
+- If a database node fails, data shall NOT be lost
 
 This requirement means that every piece of data must be stored in multiple copies, and only synchronous replication shall be used.
 
@@ -135,7 +135,7 @@ graph LR
 
 ### Resilience
 
-- If a datacenter or a node goes down:
+- If a datacenter or a node fails:
   - Clients shall experience downtime of less than 5 minutes.
   - Performance shall be fully restored within 10 minutes.
   - No data loss shall occur.
@@ -187,7 +187,7 @@ Additionally, the cost of the hardware must be reasonable. Although the cost wil
 ### Edge Computing
 
 - The system shall be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud.
-- If an Edge Device goes down, all other devices in the restaurant shall continue to work with the cloud.
+- If an Edge Device fails, all other devices in the restaurant shall continue to work with the cloud.
 - "Minor" data loss is acceptable for the Edge Device.
 - For large restaurants, it shall be possible to build a Private Cloud (Cluster), meeting Fault Tolerance and Resilience requirements.
 
