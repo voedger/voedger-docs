@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Concepts](concepts/README.md)
   * [Motivation](concepts/motivation/motivation.md)
-  * [Trade-offs](concepts/motivation/trade-offs.md)
+  * [Tradeoffs](concepts/motivation/tradeoffs.md)
   * [Clusters & Federations](concepts/clusters-and-federations.md)
   * [Applications](concepts/applications.md)
   * [VSQL](concepts/vsql.md)
