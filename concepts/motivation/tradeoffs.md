@@ -6,7 +6,7 @@ Here you will find a description and discussion of the key architectural and des
 
 | Decision | Description | Advantages | Tradeoffs | Can be improved |
 | ----------- | ----------- | ----------- | ----------- | ---- |
-| Naive Application Partition orchestration | Each Application Partition is executed in a one copy on one node | Simplicity | If a node fails, some clients experience 2-5 minutes of downtime | Yes, we believe up to few seconds, design is similar to [ksqldb, High availability](https://docs.ksqldb.io/en/latest/operate-and-deploy/high-availability/)
+| Naive Application Partition orchestration | Each Application Partition is executed in a one copy on one node | Simplicity | If a node fails, some clients experience 2-5 minutes of downtime | Yes, we believe up to few seconds, design is similar to [ksqldb, High availability](https://docs.ksqldb.io/en/latest/operate-and-deploy/high-availability-pull-queries/)
 | Naive Voedger engine update | Voedger engine updates lead to 2-5 minutes of downtime, similar to node restart | Simplicity | 2-5 minutes of downtime | Yes, up to a few seconds of downtime |
 | High granularity WASM-Host protocol | WASM module has to call Host for every field of a record it is interested in | Simplicity | Reduced performance due to multiple host calls | Yes, a low-granularity protocol can be developed |
 
