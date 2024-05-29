@@ -233,7 +233,7 @@ This is a common requirement for POS systems as it provides a natural audit trai
 
 As we wanted to go public with Voedger, we needed to add some extra requirements.
 
-### Development: Simple Coding
+### Simple Coding
 
 - It shall be extremely easy to develop Voedger applications.
 
@@ -251,13 +251,17 @@ For example, if you need to work with an entity such as Payment, you will need t
 
 What you do NOT need to do:
 
+- Use goroutines
+- Use channels
+- Take care about Isolation (??? deadlocks)
+- Take care about Consistency
 - Manage which cluster/node will process a particular Payment.
 - Determine which nodes will be used to save a particular Payment.
 - Handle synchronization of Payments between nodes to meet Fault Tolerance requirements.
 - Manage how to save and process events related to operations with Payments.
 - And much, much more...
 
-### Development: Simple Testing
+### Simple Testing
 
 - It shall be extremely easy to test Voedger applications.
 
