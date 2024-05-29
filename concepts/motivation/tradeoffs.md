@@ -10,7 +10,7 @@ Here you will find a description and discussion of the key architectural and des
 | Naive Voedger engine update | Voedger engine updates lead to 2-5 minutes of downtime, similar to node restart | Simplicity | 2-5 minutes of downtime | Yes, up to a few seconds of downtime |
 | High granularity WASM-Host protocol | WASM module has to call Host for every field of a record it is interested in | Simplicity | Reduced performance due to multiple host calls | Yes, a low-granularity protocol can be developed |
 
-Voyager sacrifices availability in favor of consistency and performance, few minutes downtime can occur under some circumstances.
+Voeger sacrifices availability in favor of consistency and performance, few minutes downtime can occur under some circumstances.
 
 ## Application Partitions
 
