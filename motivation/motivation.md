@@ -6,7 +6,7 @@ Here you will find detailed information about what Voedger is, how it helps us, 
 
 ## Jump to Clouds
 
-Voedger was initially designed by unTill Software Development Group B.V. ([unTill](https://untill.com/)) in the early 2020s. At that time, unTill was providing a mature "desktop" POS solution (unTill Prime) for the European market and seeking to develop a cloud version and to expand into other markets.
+Voedger was initially designed by unTill Software Development Group B.V. ([unTill](https://untill.com/)) in the early 2020s. At that time, unTill was providing a mature "desktop" POS solution (unTill Prime) for the European market and was seeking to develop a cloud version and expand into other markets.
 
 Technical characteristics of unTill Prime:
 
