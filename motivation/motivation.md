@@ -1,6 +1,6 @@
 # Motivation
 
-Here you will find out what Voedger is, how it helps us, and how it can be used by you.
+Here you will find detailed information about what Voedger is, how it helps us, and how it can be used by you.
 
 ---
 
@@ -25,7 +25,7 @@ unTill company management came up with the following requirements.
 |Performance| Each cluster shall support 10,000 restaurants.|
 |Edge Computing| The system shall be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud.|
 |Event Sourcing| All changes to the application state shall be stored as a sequence of events.|
-|Zero Downtime Updates| It shall be possible to update applicaton without downtime.|
+|Zero Downtime Deployment| It shall be possible to update applicaton without downtime.|
 
 Analyzing the requirements, we identified the Modern Tech Stack:
 
@@ -223,9 +223,9 @@ graph LR
 
 This is a common requirement for POS systems as it provides a natural audit trail. While highly beneficial for applications across various domains, it adds extra complexity to the project this is why it is not widely used.
 
-### Zero Downtime Updates
+### Zero Downtime Deployment
 
-- It shall be possible to update applicaton without downtime.
+- It shall be possible to deploy a new version of an application without downtime.
 
 ---
 

@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Introduction](README.md)
+  * [Motivation](motivation/motivation.md)
+  * [Tradeoffs](motivation/tradeoffs.md)
 * [Concepts](concepts/README.md)
-  * [Motivation](concepts/motivation/motivation.md)
-  * [Tradeoffs](concepts/motivation/tradeoffs.md)
   * [Clusters & Federations](concepts/clusters-and-federations.md)
   * [Applications](concepts/applications.md)
   * [VSQL](concepts/vsql.md)
