@@ -6,13 +6,15 @@ The Voedger platform was initially designed by unTill Software Development Group
 
 The name "Voedger" is a blend of "Voyager" and "Edge Computing," reflecting its coming capability to process data across the edge of the network.
 
-## Why do you need Voedger?
+## Why would you need Voedger?
 
-If you want to **save money and time** - you might need **Voedger**. We beleive that with Voedger you can cut **backend** development and operation costs up to 10x.
+If you need to do backend software development and want to **save money and time**, you might need **Voedger**. We believe that in many domains, Voedger can cut **backend** development and operation costs by up to 10x. Of course thare are tradeoffs, we will discuss them in the next topics.
 
-Why Voedger does save costs? It replaces or hides the whole modern technology stack that is used to build distributed applications:
+Why Voedger does save costs? To do what Voedger does you would need to use the Modern Technology Stack:
 
 ![Modern technology stack. Use Voedger instead all of this...](.gitbook/assets/stack.png)
+
+Voedger integrates some of these components and completely hide them from the developers, offering an easy way to work with data and data transformations.
 
 There's no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
 
