@@ -8,15 +8,17 @@ The name "Voedger" is a blend of "Voyager" and "Edge Computing," reflecting its 
 
 ## Why would you need Voedger?
 
-If you need to do backend software development and want to **save money and time**, you might need **Voedger**. We believe that in many domains, Voedger can cut **backend** development and operation costs by up to 10x. Of course thare are tradeoffs, we will discuss them in the next topics.
+If you need to do backend software development and want to **save money and time**, you might need **Voedger**. We believe that in many domains, Voedger can cut **backend** development and operation costs by up to 10x. Of course, there are trade-offs, which we will discuss in the next topics.
 
-Why Voedger does save costs? To do what Voedger does you would need to use the Modern Technology Stack:
+### Why does Voedger save costs?
 
-![Modern technology stack. Use Voedger instead all of this...](.gitbook/assets/stack.png)
+To achieve what Voedger does, you would need to use the Modern Technology Stack:
 
-Voedger integrates some of these components and completely hide them from the developers, offering an easy way to work with data and data transformations.
+![Modern technology stack. Use Voedger instead of all of this...](.gitbook/assets/stack.png)
 
-There's no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
+Voedger integrates some of these components and completely hides them from developers, offering an easy way to work with data and data transformations.
+
+There’s no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
 
 **Business Owners**
 
