@@ -120,12 +120,11 @@ graph LR
   classDef G fill:#ffffff15, stroke:#999, stroke-width:2px, stroke-dasharray: 5 5
 ```
 
-### Resilience
+### High Availability
 
-- If a datacenter or a node fails:
-  - Clients shall experience downtime of less than 5 minutes.
-  - Performance shall be fully restored within 10 minutes.
-  - No data loss shall occur.
+- If a datacenter or a node fails, clients shall experience downtime of less than 5 minutes.
+- Performance shall be fully restored within 10 minutes.
+- Downtime per month: 22 minutes, 99.95%.
 
 These requirements are satisfied by using clusters that span multiple datacenters (**stretched clusters**).
 
