@@ -1,8 +1,8 @@
 # Motivation
 
-Here you will find detailed information about what Voedger is, how it helps us, and how it can be used by you.
+Here you will find information about what the Voedger project is, how it helps us, and how it can be used by you.
 
-## Jump to Clouds
+## Case study: Jump to Clouds
 
 Voedger was initially designed by unTill Software Development Group B.V. ([unTill](https://untill.com/)) in the early 2020s. At that time, unTill was providing a mature "desktop" POS solution (unTill Prime) for the European market and was seeking to develop a cloud version and expand into other markets.
 
@@ -12,18 +12,19 @@ Technical characteristics of unTill Prime:
 - RDBMS: Firebird
 - Database schema: more than 400 tables
 
-unTill company management came up with the following requirements.
+unTill company management came up with the following initial requirements.
 
 | Requirement name | Description |
 | ---------------- | ----------- |
-| Distributed Data | It shall be possible to create clusters to keep POS data and configuration all over the world. |
-| Federation       | Users shall be able to work with their data across clusters transparently. |
-| Fault Tolerance  | If a database node fails, data shall NOT be lost. |
-| High Availability | If a datacenter or a node fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 minutes, 99.95%.|
-| Event Sourcing   | All changes to the application state shall be stored as a sequence of events. |
+| Distributed Data | It shall be possible to create **clusters** to keep POS data and configuration all over the world. |
+| Federation       | Users shall have the ability to store their data across multiple clusters, for example, to manage several restaurants located in different parts of Europe.|
+| Fault Tolerance  | If a node or a cluster fails, data shall NOT be lost. |
+| High Availability | If a node or a datacenter fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 minutes, 99.95% ("three nines five").|
+| Event Sourcing   | System shall be built around the "journal". All changes to the application state shall be stored as a sequence of events. |
 | Consistency      | Strict Consistency for commands, Eventual Consistency for queries|
+| Scalability      | It shall be possible to scale the system by adding nodes to existing clusters and creating new clusters|
 | Edge Computing   | The system **will** be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud. |
-| Performance      | Each cluster shall support 10,000 restaurants. |
+| Performance      | Each cluster shall support 10,000 restaurants (230 operations per second, see below). |
 | Zero Downtime Deployment | It shall be possible to update the application without downtime. |
 
 Analyzing the requirements, we identified the Modern Tech Stack:
