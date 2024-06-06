@@ -248,13 +248,13 @@ This way, an extension can be considered a "pure function" without side effects,
 
 For unit testing, there is no need to run the whole system, just the extension itself.
 
-### Operation: Cloud Agnostic
+### Cloud Agnostic
 
 - It shall be possible to run Voedger everywhere, including on your own infrastructure.
 
 This is a direct result of the Edge Computing requirement: if we can run Voedger on a POS device, we can run it on any cloud provider.
 
-### Operation: Simple Configuration
+### Simple Configuration
 
 - It shall be easy for Admins to build a cluster and replace a failed node.
 
