@@ -6,12 +6,12 @@ Here you will find a description and discussion of the key architectural and des
 
 In short: Voeger sacrifices availability in favor of consistency and performance, few minutes downtime can occur under some circumstances.
 
-| Decision | Description | Advantages | Tradeoffs | Can be improved |
+| Decision | Description | Advantages | Tradeoffs | Can be improved? |
 | ----------- | ----------- | ----------- | ----------- | ---- |
-| Naive Application Partition orchestration | Each Application Partition is executed in a one copy on one node | Simplicity | If a node fails, some clients experience 2-5 minutes of downtime | Yes, we believe up to few seconds, design is similar to [ksqldb, High availability](https://docs.ksqldb.io/en/latest/operate-and-deploy/high-availability-pull-queries/)
-| Naive Voedger engine update | Voedger engine updates lead to 2-5 minutes of downtime, similar to node restart | Simplicity | 2-5 minutes of downtime | Yes, up to a few seconds of downtime |
+| "Sticky Sessions" + Naive Application Partitions Orchestration| Requests from the same client are processed by the same node | Simplicity, Performance, Isolation| If the node fails some Application Partitions has to be restarted on other nodes, causing a few minutes downtime|Yes, we believe that downtime can be reduced up to a few seconds, design is similar to [ksqldb, High availability](https://docs.ksqldb.io/en/latest/operate-and-deploy/high-availability-pull-queries/)|
+| Naive Voedger engine update | Voedger engine update leads to a few minutes downtime, similar to node restart | Simplicity | Few minutes downtime | Yes, up to a few seconds downtime |
 | Naive BLOB storage | Voedger keeps BLOB data in a database | Simplicity | Can be expensive | Yes, will be possible to use S3 storage or similar.|
-| High granularity WASM-Host protocol | WASM module has to call Host for every field of a record it is interested in | Simplicity | Reduced performance due to multiple host calls | Yes, a low-granularity protocol can be developed |
+| High granularity WASM-Host protocol | WASM module has to call Host for every field of a record it is interested in | Simplicity | Reduced performance due to multiple host calls | Yes, a low-granularity protocol can be developed|
 
 
 ## Naive Application Partition orchestration
@@ -22,10 +22,10 @@ In short: Voeger sacrifices availability in favor of consistency and performance
 - If a node goes down, all partitions have to be restarted on other nodes.
 
 **Problem:**
-- If a node goes down, it causes 2-5 minutes of downtime visible to some clients.
+- If a node goes down, it causes a few minutes downtime visible to some clients.
 
 **Can be improved:**
-- Yes, downtime can be reduced to approximately 20 seconds.
+- Yes, downtime can be reduced to a few seconds.
 
 ## High granularity WASM-Host protocol
 
