@@ -19,7 +19,7 @@ unTill company management came up with the following requirements.
 | Distributed Data | It shall be possible to create clusters to keep POS data and configuration all over the world. |
 | Federation       | Users shall be able to work with their data across clusters transparently. |
 | Fault Tolerance  | If a database node fails, data shall NOT be lost. |
-| High Availability | If a datacenter or a node fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 min/month, 99.95%.|
+| High Availability | If a datacenter or a node fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 min, 99.95%.|
 | Performance      | Each cluster shall support 10,000 restaurants. |
 | Edge Computing   | The system shall be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud. |
 | Event Sourcing   | All changes to the application state shall be stored as a sequence of events. |
