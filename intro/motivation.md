@@ -20,9 +20,10 @@ unTill company management came up with the following requirements.
 | Federation       | Users shall be able to work with their data across clusters transparently. |
 | Fault Tolerance  | If a database node fails, data shall NOT be lost. |
 | High Availability | If a datacenter or a node fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 min, 99.95%.|
-| Performance      | Each cluster shall support 10,000 restaurants. |
-| Edge Computing   | The system shall be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud. |
 | Event Sourcing   | All changes to the application state shall be stored as a sequence of events. |
+| Consistency      | Strict Consistency for commands, Eventual Consistency for queries|
+| Edge Computing   | The system **will** be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud. |
+| Performance      | Each cluster shall support 10,000 restaurants. |
 | Zero Downtime Deployment | It shall be possible to update the application without downtime. |
 
 Analyzing the requirements, we identified the Modern Tech Stack:
