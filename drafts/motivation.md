@@ -29,7 +29,7 @@ unTill company management came up with the following initial requirements.
 
 Analyzing the requirements, we identified the Modern Tech Stack:
 
-![Modern Tech Stack](stack.png)
+![Modern Tech Stack](../images/stack.png)
 
 We could have built our system using components from this stack. It would take man-years to develop - we agreed to invest these resources, as did our colleagues from other POS providers. However, during the analysis and research process, we got the idea that we could create a "generic engine" that meets the requirements above. This engine would not only enable us to build our POS system but also allow us to bring a new product to the market. This product would enable the development of systems with similar requirements in a significantly shorter time, potentially up to 10 times faster than using just the Modern Tech Stack.
 
