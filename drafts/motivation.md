@@ -1,8 +1,8 @@
 # Motivation
 
-Here you will find information about what the Voedger project is, how it helps us, and how it can be used by you.
+Here you will find information about how and why we initiatedwhat the Voedger project is, how it helps us, and how it can be used by you.
 
-## Case study: Jump to Clouds
+## unTill Air
 
 Voedger was initially designed by unTill Software Development Group B.V. ([unTill](https://untill.com/)) in the early 2020s. At that time, unTill was providing a mature "desktop" POS solution (unTill Prime) for the European market and was seeking to develop a cloud version and expand into other markets.
 
