@@ -41,3 +41,5 @@ As we wanted to go public with Voedger, we needed to add some extra requirements
 | Simple Testing    | It shall be extremely easy to test Voedger applications. |
 | Cloud Agnostic    | It shall be possible to run Voedger everywhere, including on your own infrastructure. |
 | Simple Configuration | It shall be easy to build and operate clusters.|
+
+All requirements, their implementation, advantages and tradeoffs will be considered in details in the following topics.
