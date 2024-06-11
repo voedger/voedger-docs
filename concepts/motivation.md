@@ -13,7 +13,7 @@ unTill company management came up with the following initial requirements.
 | Requirement name | Description |
 | ---------------- | ----------- |
 | Distributed Data | It shall be possible to create **clusters** to keep POS data and configuration all over the world. |
-| Federation       | Users shall have the ability to store their data across multiple clusters, for example, to manage several restaurants located in different parts of Europe.|
+| Federation       | Users shall have the ability to store their data across multiple clusters, for example, to manage several restaurants located in different parts of Europe. |
 | Fault Tolerance  | If a node or a cluster fails, data shall NOT be lost. |
 | High Availability | If a node or a datacenter fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 minutes, 99.95% ("three nines five").|
 | Event Sourcing   | System shall be built around the "journal". All changes to the application state shall be stored as a sequence of events. |
@@ -27,7 +27,7 @@ Analyzing the requirements, we identified the Modern Tech Stack:
 
 ![Modern Tech Stack](../images/stack.png)
 
-We could have built our system using components from this stack. It would take man-years to develop - we agreed to invest these resources, as did our colleagues from other POS providers. However, during the analysis and research process, we got the idea that we could create a "generic engine" that meets the requirements above. This engine would not only enable us to build our POS system but also allow us to bring a new product to the market. This product would enable the development of systems with similar requirements in a significantly shorter time, potentially up to 10 times faster than using just the Modern Tech Stack.
+We could have built our system using components from this stack. It would take man-years to develop and we had agreed to invest these resources, as did our colleagues from other POS providers. However, during the analysis and research process, we got the idea that we could create a "generic engine" that meets the requirements above. This engine would not only enable us to build our POS system but also allow us to bring a new product to the market. This product would enable the development of systems with similar requirements in a significantly shorter time, potentially up to 10 times faster than using just the Modern Tech Stack.
 
 We shared this idea with colleagues from other companies, and they agreed to invest in the development of this engine.
 
@@ -40,6 +40,6 @@ As we wanted to go public with Voedger, we needed to add some extra requirements
 | Simple Coding     | It shall be extremely easy to develop Voedger applications. |
 | Simple Testing    | It shall be extremely easy to test Voedger applications. |
 | Cloud Agnostic    | It shall be possible to run Voedger everywhere, including on your own infrastructure. |
-| Simple Configuration | It shall be easy to build and operate clusters.|
+| Simple Configuration | It shall be easy to build and operate clusters. |
 
-All requirements, their implementation, advantages and tradeoffs will be considered in details in the following topics.
+All requirements, their implementation, advantages, and trade-offs will be considered in detail in the following topics.
