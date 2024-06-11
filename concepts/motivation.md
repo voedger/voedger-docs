@@ -8,11 +8,14 @@ Technical characteristics of unTill Prime:
 - RDBMS: Firebird
 - Database schema: more than 400 tables
 
-unTill company management came up with the following initial requirements.
+Client base: ~15000 POS terminals and 20000 handheld devices.
+
+unTill company management came up with the following initial requirements for the cloud version.
 
 | Requirement name | Description |
 | ---------------- | ----------- |
 | Distributed Data | It shall be possible to create **clusters** to keep POS data and configuration all over the world. |
+| Performance      | Each cluster shall support 10,000 restaurants (230 operations per second, see below). |
 | Federation       | Users shall have the ability to store their data across multiple clusters, for example, to manage several restaurants located in different parts of Europe. |
 | Fault Tolerance  | If a node or a cluster fails, data shall NOT be lost. |
 | High Availability | If a node or a datacenter fails, clients shall experience downtime of less than 5 minutes. Downtime per month: 22 minutes, 99.95% ("three nines five").|
@@ -20,7 +23,6 @@ unTill company management came up with the following initial requirements.
 | Consistency      | Strict Consistency for commands, Eventual Consistency for queries|
 | Scalability      | It shall be possible to scale the system by adding nodes to existing clusters and creating new clusters|
 | Edge Computing   | The system **will** be installable at the "edge" (e.g., in a restaurant) and able to synchronize with the cloud. |
-| Performance      | Each cluster shall support 10,000 restaurants (230 operations per second, see below). |
 | Zero Downtime Deployment | It shall be possible to update the application without downtime. |
 
 Analyzing the requirements, we identified the Modern Tech Stack:
@@ -41,5 +43,7 @@ As we wanted to go public with Voedger, we needed to add some extra requirements
 | Simple Testing    | It shall be extremely easy to test Voedger applications. |
 | Cloud Agnostic    | It shall be possible to run Voedger everywhere, including on your own infrastructure. |
 | Simple Configuration | It shall be easy to build and operate clusters. |
+
+We have designed and built Voedger to meet all these requirements. If your system has similar requirements, Voedger could be the solution for you.
 
 All requirements, their implementation, advantages, and trade-offs will be considered in detail in the following topics.
