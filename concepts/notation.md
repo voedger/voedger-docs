@@ -27,7 +27,7 @@ graph TD
   
   User["@ Role"]:::B
   Company[["Company"]]:::B
-  BusinessProcess("> Business process"):::B
+  BusinessProcess("&gt; Business process"):::B
 
   %% Relations =================================
   Device --- |hosts| Product
@@ -66,7 +66,7 @@ graph TD
   Database[(Database)]:::H
   AppWorkspace[(App Workspace)]:::S
   UserWorkspace[(User Workspace)]:::S
-  SoftwareComponent["# Software Component"]:::S
+  SoftwareComponent[#num; Software Component]:::S
   SoftwareService([Software service]):::S
   Event>Event1]:::B
   
@@ -108,8 +108,8 @@ Role2["@ Role2"]:::B
 SoftwareComponents:::G
 Workspace2[(Workspace 2)]:::S
 subgraph SoftwareComponents[Workspace1]
-  Command1("> Command1"):::S
-  Command2("> Command2"):::S
+  Command1("#gt;  Command1"):::S
+  Command2("#gt; Command2"):::S
   Query1("< Query1"):::S
   Projector1[/Projector1/]:::S
   Projector2[/Projector2/]:::S
@@ -118,7 +118,7 @@ subgraph SoftwareComponents[Workspace1]
   Table2["extpkg.cdoc.Table1"]:::H
   ViewField1([Field1]):::H
   ViewField2([Field2]):::H
-  sys.CreateChildWorkspace("> sys.CreateChildWorkspace"):::S
+  sys.CreateChildWorkspace("#gt; sys.CreateChildWorkspace"):::S
 end  
 
 %% Relations =================================
