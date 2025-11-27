@@ -14,7 +14,7 @@ If you need to do backend software development and want to **save money and time
 
 To achieve what Voedger does, you would need to use the Modern Technology Stack:
 
-![Modern technology stack. Use Voedger instead of all of this...](.gitbook/assets/stack.png)
+![Modern technology stack. Use Voedger instead of all of this...](/img/stack.png)
 
 Voedger integrates some of these components and completely hides them from developers, offering an easy way to work with data and data transformations.
 
