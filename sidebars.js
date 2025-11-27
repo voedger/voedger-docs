@@ -19,7 +19,7 @@ const sidebars = {
   tutorialSidebar: [
   {
     "type": "doc",
-    "id": "intro/README",
+    "id": "README",
     "label": "Introduction"
   },
   {

@@ -1,6 +1,6 @@
 # Table of contents
 
-- [Introduction](intro/README.md)
+- [Introduction](README.md)
 - [Concepts](concepts/README.md)
   - [Motivation](concepts/motivation.md)
   - [Clusters & Federations](concepts/clusters-and-federations.md)

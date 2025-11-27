@@ -1,3 +1,8 @@
+---
+slug: /
+title: Introduction
+---
+
 # Introduction
 
 **Voedger** is an all-in-one **server platform**  for the development and operation of specialized applications distributed worldwide (**Voedger Applications**).  A Voedger Application includes a description of the data schema (using VSQL language) and zero or many WASM files.
@@ -18,7 +23,7 @@ To achieve what Voedger does, you would need to use the Modern Technology Stack:
 
 Voedger integrates some of these components and completely hides them from developers, offering an easy way to work with data and data transformations.
 
-There’s no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
+There's no need to learn, select, and integrate these technologies. With Voedger, you can focus only on what truly matters for your business. Voedger offers significant advantages to:
 
 **Business Owners**
 
@@ -59,3 +64,4 @@ Voedger platform is perfect to build and operate software aimed to store and pro
 ## What Voedger is NOT
 
 Voedger is NOT a good choice for **game** and **blockchain** applications since storing data is not a primary goal of such applications or data is kept decentralized.
+
